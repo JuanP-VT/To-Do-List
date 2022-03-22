@@ -5,6 +5,8 @@
 }
 #main{
 height: 98vh;
+border: 1px black solid;
+
 }
 
 #header{
@@ -14,11 +16,13 @@ height: 98vh;
     font-size: 80px;
     align-items: center;
     justify-content: center;
+    border: 1px black solid;
 }
 #content{
     display: flex;
     height: 85%;
     width: 100%;
+    
 
 }
 #sidebar{
@@ -26,6 +30,10 @@ height: 98vh;
     width: 20%;
     height: 100%;
     flex-direction: column;
+    border: 1px black solid;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
 }
 #sidebarHeader{
     height: 10%;
@@ -33,6 +41,7 @@ height: 98vh;
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    border-bottom: black solid 1px;
 }
 #newProject{
     color: blue;
@@ -73,7 +82,14 @@ button{
     display: flex;
     flex-direction: column;
 }
-
+.newProject{
+    text-align: center;
+    border: none;
+}
+.newProject:hover{
+    transform: scale(1.15);
+    font-weight: 800;
+}
 
 #viewProject{
     display: flex;
