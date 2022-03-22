@@ -9,6 +9,8 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean:true,
+    library: 'MyLib',
+    libraryTarget: 'var',
   },
   devtool: 'inline-source-map',
   devServer:{
@@ -23,7 +25,7 @@ module.exports = {
 
     }),
   ],
- module: {
+module: {
    rules: [
      {test: /\.(?:ico|gif|jpg|png)$/i,
       type : 'asset/resource'

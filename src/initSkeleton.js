@@ -26,7 +26,29 @@ sidebar.appendChild(sidebarHeader)
 const projects = document.createElement('div')
 projects.id = 'projects'
 
+
+const newProject = document.createElement('div')
+newProject.id = 'newProject'
+sidebar.appendChild(newProject)
+const newProjectTitle = document.createElement('div')
+newProjectTitle.textContent = 'Create New Project'
+newProject.appendChild(newProjectTitle)
+newProjectTitle.id = 'newProjectTitle'
 sidebar.appendChild(projects)
+/// placeholders
+const p1 = document.createElement('div')
+p1.textContent = 'placeholder'
+projects.appendChild(p1)
+
+const p2 = document.createElement('div')
+p2.textContent = 'placeholder'
+projects.appendChild(p2)
+
+const p3 = document.createElement('div')
+p3.textContent = 'placeholder'
+projects.appendChild(p3)
+/// placeholders
+
 
 
 const viewProject = document.createElement('div')
