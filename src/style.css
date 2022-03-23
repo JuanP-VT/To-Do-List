@@ -71,10 +71,10 @@ button{
     width: 70%;
     height: 70%;
 }
-#close{
+.close{
     transform: scale(0.5);
 }
-#close:hover{
+.close:hover{
     transform: scale(0.6);
     
 }
@@ -135,7 +135,6 @@ button{
     display: flex;
 }
 
-#checkbox{
-    display: flex;
-    width: 150px;
+select{
+    width: 300px;
 }

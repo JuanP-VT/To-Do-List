@@ -20,9 +20,9 @@ submit.id = 'submit'
 confirmDiv.appendChild(submit)
 const close = new Image()
 close.src = cancelIcon
+close.classList.add('close')
 close.id = 'close'
 confirmDiv.appendChild(close)
-
 form.appendChild(confirmDiv)
 
 export {form}
@@ -52,11 +52,15 @@ const submitbtn = document.createElement('button')
 submitbtn.id = 'activitySubmit'
 submitbtn.textContent = 'Add'
 
-const checkbox = document.createElement('input')
-checkbox.type = 'checkbox'
-checkbox.id = 'checkbox'
+const select = document.createElement('select')
+select.setAttribute('name','importance')
+select.id = 'select'
+select.add(new Option('low'))
+select.add(new Option('mid'))
+select.add(new Option('high'))
+
 const label4 = document.createElement('label')
-label4.innerHTML = 'Very Important'
+label4.innerHTML = 'Importance'
 
 
 
@@ -68,12 +72,16 @@ activityForm.appendChild(activitDetails)
 activityForm.appendChild(label3)
 activityForm.appendChild(activityDate)
 activityForm.appendChild(label4)
-activityForm.appendChild(checkbox)
+activityForm.appendChild(select)
 
 activityForm.appendChild(btnDiv)
 btnDiv.appendChild(submitbtn)
-btnDiv.appendChild(close)
 
-close.addEventListener('click',closeForm)
+const close2 = new Image()
+close2.src = cancelIcon
+close2.classList.add('close')
+btnDiv.appendChild(close2)
+
+close2.addEventListener('click',closeForm)
 
 export{divForm}

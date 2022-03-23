@@ -12,9 +12,7 @@ function viewProject(){
     const storedProject = JSON.parse(localStorage.getItem(keyName))
     console.log(storedProject)
 
-
-
-//Display Name
+    //display name
 const projectName = document.querySelector('#projectName')
 projectName.textContent =storedProject.name
 
@@ -28,7 +26,7 @@ if(footer.firstChild){
     footer.removeChild(footer.firstChild)
 }
 footer.appendChild(btn)
-btn.addEventListener('click',makeActivityForm)
+btn.addEventListener('click',makeActivityForm.bind(event,storedProject))
 
 }
 
