@@ -67,6 +67,11 @@ const toDo = document.createElement('div')
 toDo.id = 'toDo'
 
 viewProject.appendChild(toDo)
+
+const footer = document.createElement('div')
+footer.id = 'projectFooter'
+viewProject.appendChild(footer)
+
 }
 
 export {initPage}
