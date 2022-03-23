@@ -123,6 +123,7 @@ button{
 }
 #toDo{
     display: flex;
+    flex-direction: column;
     
 }
 
@@ -137,4 +138,48 @@ button{
 
 select{
     width: 300px;
+}
+
+.actDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid black 1px;
+    padding: 10px;
+    height: 150px;
+    
+}
+.actDiv:active{
+    transform: scale(0.99);
+}
+.upDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+}
+.divDate{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.downDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.low{
+    background-color: green;
+}
+
+.mid{
+    background-color: yellow;
+}
+
+.high{
+    background-color: red;
 }

@@ -85,3 +85,37 @@ btnDiv.appendChild(close2)
 close2.addEventListener('click',closeForm)
 
 export{divForm}
+
+
+//Activities Divs
+const actDiv = document.createElement('div')
+actDiv.classList.add('actDiv')
+const upDiv=document.createElement('div')
+upDiv.classList.add('upDiv')
+
+const divName = document.createElement('div')
+divName.textContent = '0'
+divName.classList.add('card')
+divName.classList.add('divName')
+upDiv.appendChild(divName)
+const divDate = document.createElement('div')
+divDate.textContent= 'date'
+divDate.classList.add('divDate')
+upDiv.appendChild(divDate)
+actDiv.appendChild(upDiv)
+
+const downDiv = document.createElement('div')
+downDiv.classList.add('downDiv')
+const divDetails = document.createElement('div')
+divDetails.textContent = 'details'
+divDetails.classList.add('divDetails')
+divDetails.classList.add('card')
+downDiv.appendChild(divDetails)
+const close3 = new Image()
+close3.src= cancelIcon
+
+close3.classList.add('close')
+downDiv.appendChild(close3)
+actDiv.appendChild(downDiv)
+
+export {actDiv,divDate,divDetails,divName}

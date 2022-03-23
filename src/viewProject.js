@@ -1,10 +1,12 @@
+import { clearActivitiesFromScreen } from './clearActivitiesFromScreen';
 import { closeForm } from './closeForm'
+import { displayProjectActivities } from './displayProjectActivities';
 import {divForm} from './domContent'
 import { makeActivityForm } from './makeActivityForm'
 function viewProject(){
+    clearActivitiesFromScreen()
     closeForm();
-
-
+    
 
     console.log(this)
     const keyName = this.textContent
@@ -12,7 +14,9 @@ function viewProject(){
     const storedProject = JSON.parse(localStorage.getItem(keyName))
     console.log(storedProject)
 
-    //display name
+    displayProjectActivities(storedProject)
+
+    //Display Current Project Name
 const projectName = document.querySelector('#projectName')
 projectName.textContent =storedProject.name
 
