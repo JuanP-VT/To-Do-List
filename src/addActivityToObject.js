@@ -1,4 +1,6 @@
 import { activityFactory } from "./activityFactory"
+import { refreshProjectActivities } from "./refreshProjectActivities"
+
 
 function addActivityToObject(storedProject){
     event.preventDefault()
@@ -19,11 +21,17 @@ function addActivityToObject(storedProject){
 //Save back to local storage
 localStorage.setItem(storedProjectKey, JSON.stringify(project))
 console.log(project)
+//Refresh activities
+console.log(project)
+refreshProjectActivities(project);
+
 document.forms[0].reset();
 const forms = document.forms[1]
 if (forms){
     document.forms[1].reset();
 }
+
+
 }
 
 export{addActivityToObject}
