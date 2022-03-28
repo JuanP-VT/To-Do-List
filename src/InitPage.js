@@ -57,11 +57,6 @@ projectHeader.appendChild(delProject)
 
 projectHeader.appendChild(delProject)
 
-const myIcon = new Image()
-myIcon.src = delIcon
-myIcon.id = 'icon'
-
-delProject.append(myIcon)
 
 const toDo = document.createElement('div')
 toDo.id = 'toDo'
