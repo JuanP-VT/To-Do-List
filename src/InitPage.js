@@ -30,7 +30,7 @@ projects.id = 'projects'
 const newProject = document.createElement('div')
 newProject.id = 'newProject'
 sidebar.appendChild(newProject)
-const newProjectTitle = document.createElement('div')
+const newProjectTitle = document.createElement('button')
 newProjectTitle.textContent = 'Create New Project'
 newProject.appendChild(newProjectTitle)
 newProjectTitle.id = 'newProjectTitle'

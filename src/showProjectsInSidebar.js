@@ -1,3 +1,5 @@
+import { viewProject } from "./viewProject"
+
 function showProjectsInSidebar(){
     const sidebarProjects = document.querySelector('#projects')
     //Clear Sidebar 
@@ -13,8 +15,13 @@ function showProjectsInSidebar(){
         newP.textContent = key
         newP.setAttribute('data-key',key)
         sidebarProjects.appendChild(newP)
+
+        //Add EventListener to viewProject
+        newP.addEventListener('click',viewProject)
         
     }
+
+
 }
 
 export{showProjectsInSidebar}
