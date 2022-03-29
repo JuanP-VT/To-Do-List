@@ -54,8 +54,7 @@ border: 1px black solid;
 }
 #newProjectTitle{
     font-size: 1.2em;
-    padding-left: 150px;
-    padding-right: 150px;
+
     justify-self: center;
 
 }

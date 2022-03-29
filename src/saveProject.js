@@ -1,3 +1,4 @@
+import { closeAddProjectForm } from './CloseAddProjectForm'
 import {projectFactory} from './ProjectFactory'
 import { showProjectsInSidebar } from './showProjectsInSidebar'
 
@@ -20,6 +21,8 @@ function saveProject(ev){
 
     //Refresh Projects
     showProjectsInSidebar()
+    //Close Form
+    closeAddProjectForm()
 }
 
 export {saveProject}
