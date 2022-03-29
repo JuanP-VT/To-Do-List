@@ -12,7 +12,14 @@ function saveActivity(){
     
     //Get project from localstorage
     const projectKey = this.getAttribute('data-key')
-    console.log(this.getAttribute('data-key'))
+    const Project = (JSON.parse(localStorage.getItem(projectKey)))
+
+    //Save activity to project
+    Project.activities.push(activity)
+
+    //Save object back to LocalStorage
+    localStorage.setItem(projectKey,JSON.stringify(Project))
+    
 
 }
 
