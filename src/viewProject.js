@@ -1,5 +1,6 @@
 import { createFormToAddActivities } from './CreateFormToAddActivities'
 import { deleteProject } from './deleteProject'
+import { displayProjectActivities } from './displayProjectActivities'
 import delIcon from './img/delIcon.png'
 
 function viewProject(){
@@ -27,6 +28,8 @@ $delProject.appendChild(icon)
 //Event to delete from Storage
 icon.addEventListener('click',deleteProject)
 
+//Display project's activities
+displayProjectActivities(name)
 
 //Button to create form to add activities to the project
 //Check and delete previous buttons 

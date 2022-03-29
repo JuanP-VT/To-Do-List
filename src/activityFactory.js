@@ -1,9 +1,10 @@
-function activityFactory(name,details,date,importance){
+function activityFactory(name,details,date,importance,done){
     return{
         name,
         details,
         date,
-        importance
+        importance,
+        done
     }
 }
 

@@ -1,4 +1,6 @@
 import { activityFactory } from "./activityFactory"
+import { closeAddActivitiesForm } from "./CloseAddActivitiesForm"
+import { displayProjectActivities } from "./displayProjectActivities"
 
 function saveActivity(){
 //Get input values
@@ -8,7 +10,7 @@ function saveActivity(){
     const importance = document.querySelector('#select').value
 
     //Set Activity as an Object
-    const activity = activityFactory(name,details,date,importance)
+    const activity = activityFactory(name,details,date,importance,false)
     
     //Get project from localstorage
     const projectKey = this.getAttribute('data-key')
@@ -20,6 +22,11 @@ function saveActivity(){
     //Save object back to LocalStorage
     localStorage.setItem(projectKey,JSON.stringify(Project))
     
+    //Refresh cctivities to show the new one
+    displayProjectActivities(projectKey)
+
+    //close add activities form
+    closeAddActivitiesForm()
 
 }
 
