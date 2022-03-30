@@ -1,6 +1,14 @@
 import delIcon from './img/delIcon.png'
+import allIconImg from './img/all.png'
+import file1 from './img/file-tree1.png'
+import file2 from './img/file-tree2.png'
+import file3 from './img/file-tree3.png'
+
 function initPage(){
     const main = document.querySelector('#main')
+
+
+
 
 const header = document.createElement('div')
 header.textContent = 'My To Do List'
@@ -18,6 +26,108 @@ sidebar.id = 'sidebar'
 const sidebarHeader = document.createElement('div')
 
 content.appendChild(sidebar)
+
+const summaryDiv = document.createElement('div')
+summaryDiv.id = 'summaryDiv'
+
+sidebar.appendChild(summaryDiv)
+
+const summaryHeader = document.createElement('div')
+summaryHeader.id = 'summaryHeader'
+summaryHeader.textContent = 'Summary'
+
+summaryDiv.appendChild(summaryHeader)
+
+const summaryContent = document.createElement('div')
+summaryContent.id = 'summaryContent'
+
+summaryDiv.appendChild(summaryContent)
+
+const all = document.createElement('div')
+all.classList.add('options')
+all.id = 'all'
+
+
+
+summaryContent.appendChild(all)
+
+const allIcon = document.createElement('div')
+allIcon.classList.add('iconSide')
+
+const alltaskicon = new Image()
+alltaskicon.src = allIconImg
+
+allIcon.appendChild(alltaskicon)
+
+
+const allText = document.createElement('div')
+allText.classList.add('textSide')
+allText.textContent = 'All Activities'
+
+all.appendChild(allIcon)
+all.appendChild(allText)
+
+const lowImportance = document.createElement('div')
+lowImportance.id = 'lowImportance'
+lowImportance.classList.add('options')
+
+summaryContent.appendChild(lowImportance)
+
+const lowIcon = document.createElement('div')
+lowIcon.classList.add('iconSide')
+const lowIconImg = new Image()
+lowIconImg.src = file1
+
+lowIcon.appendChild(lowIconImg)
+
+const lowText = document.createElement('div')
+lowText.classList.add('textSide')
+lowText.textContent = 'Low Importance'
+
+lowImportance.appendChild(lowIcon)
+lowImportance.appendChild(lowText)
+
+
+const midImportance = document.createElement('div')
+midImportance.id = 'lowImportance'
+midImportance.classList.add('options')
+
+summaryContent.appendChild(midImportance)
+
+const midIcon = document.createElement('div')
+lowIcon.classList.add('iconSide')
+const midIconImg = new Image()
+midIconImg.src = file2
+
+midIcon.appendChild(midIconImg)
+
+const midText = document.createElement('div')
+midText.classList.add('textSide')
+midText.textContent = 'Mid Importance'
+
+midImportance.appendChild(midIcon)
+midImportance.appendChild(midText)
+//
+const highImportance = document.createElement('div')
+highImportance.id = 'lowImportance'
+highImportance.classList.add('options')
+
+summaryContent.appendChild(highImportance)
+
+const highIcon = document.createElement('div')
+highIcon.classList.add('iconSide')
+const highIconImg = new Image()
+highIconImg.src = file3
+
+highIcon.appendChild(highIconImg)
+
+const highText = document.createElement('div')
+highText.classList.add('textSide')
+highText.textContent = 'High Importance'
+
+highImportance.appendChild(highIcon)
+highImportance.appendChild(highText)
+//
 
 sidebarHeader.id = 'sidebarHeader'
 sidebarHeader.textContent = 'Projects'

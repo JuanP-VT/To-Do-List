@@ -140,4 +140,4 @@ cardDelete.appendChild(cardDeleteIcon)
 downDiv.appendChild(cardDetails)
 downDiv.appendChild(cardDelete)
 
-export {actCard,cardName,cardDate,cardDetails,cardDelete,cardDeleteIcon}
+export {actCard,cardName,cardDate,cardDetails,cardDelete,cardDeleteIcon,chkbtn}

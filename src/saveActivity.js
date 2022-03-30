@@ -4,11 +4,19 @@ import { displayProjectActivities } from "./displayProjectActivities"
 
 function saveActivity(){
 //Get input values
-    const name = document.querySelector('#actNameInput').value
+    let name = document.querySelector('#actNameInput').value
     const details = document.querySelector('#actDetails').value
-    const date = document.querySelector('#actDate').value
+    let date = document.querySelector('#actDate').value
     const importance = document.querySelector('#select').value
 
+//Adding Placeholder for empty fields
+    if (name == ''){
+        name = 'No Name Set'
+    }
+
+    if (date == ''){
+        date = 'No Date Set'
+    }
     //Set Activity as an Object
     const activity = activityFactory(name,details,date,importance,false)
     
