@@ -8,6 +8,7 @@ function saveActivity(){
     const details = document.querySelector('#actDetails').value
     let date = document.querySelector('#actDate').value
     const importance = document.querySelector('#select').value
+    const projectKey = this.getAttribute('data-key')
 
 //Adding Placeholder for empty fields
     if (name == ''){
@@ -18,10 +19,10 @@ function saveActivity(){
         date = 'No Date Set'
     }
     //Set Activity as an Object
-    const activity = activityFactory(name,details,date,importance,false)
+    const activity = activityFactory(name,details,date,importance,false,projectKey)
     
     //Get project from localstorage
-    const projectKey = this.getAttribute('data-key')
+
     const Project = (JSON.parse(localStorage.getItem(projectKey)))
 
     //Save activity to project
