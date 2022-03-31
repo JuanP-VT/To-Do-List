@@ -23,7 +23,13 @@ for (let index = 0; index < localStorage.length; index++) {
         cardDate.textContent = element.date
         cardDelete.textContent = 'Project: '+element.from
 
-    //Remove unnecesary DOM elements
+            //Applying card style for completion status
+    if(element.done == true){
+        actCard.classList.add('complete')
+    }
+    if(element.done == false){
+        actCard.classList.remove('complete')
+    }
 
             //Applying card styles for importance
     if(element.importance == 'Low'){

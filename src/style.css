@@ -195,4 +195,5 @@ justify-content: space-around;
 
 .complete{
     background-color: grey !important;
+    opacity: 0.6;
 }

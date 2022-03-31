@@ -27,7 +27,17 @@ function displayProjectActivities(projectKey){
 
     //Button to delete activity from project
         cardDeleteIcon.addEventListener('click',deleteActivity)
+    
 
+    //Applying card style for completion status
+    console.log(act[index].done)
+    if(act[index].done == true){
+        actCard.classList.add('complete')
+    }
+    if(act[index].done == false){
+        actCard.classList.remove('complete')
+    }
+    
     //Applying card styles for importance
     if(act[index].importance == 'Low'){
         actCard.classList.add('Low')

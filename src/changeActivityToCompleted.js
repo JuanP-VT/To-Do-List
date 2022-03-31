@@ -1,3 +1,5 @@
+import { displayProjectActivities } from "./displayProjectActivities"
+
 function completeActivity(){
     const projectKey = this.getAttribute('data-key')
     const actIndex = this.getAttribute('data-index')
@@ -20,7 +22,9 @@ console.log(myProject)
 
 //Save project back to localstorage
 localStorage.setItem(projectKey,JSON.stringify(myProject))
-}
 
+// Refresh activities to see changes
+displayProjectActivities(projectKey)
+}
 export{completeActivity}
 
