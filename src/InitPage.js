@@ -89,7 +89,7 @@ lowImportance.appendChild(lowText)
 
 
 const midImportance = document.createElement('div')
-midImportance.id = 'lowImportance'
+midImportance.id = 'midImportance'
 midImportance.classList.add('options')
 
 summaryContent.appendChild(midImportance)
@@ -109,7 +109,7 @@ midImportance.appendChild(midIcon)
 midImportance.appendChild(midText)
 //
 const highImportance = document.createElement('div')
-highImportance.id = 'lowImportance'
+highImportance.id = 'highImportance'
 highImportance.classList.add('options')
 
 summaryContent.appendChild(highImportance)

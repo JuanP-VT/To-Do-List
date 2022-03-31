@@ -1,3 +1,4 @@
+import { displayAllActivities } from "./displayAllActivities"
 import { showProjectsInSidebar } from "./showProjectsInSidebar"
 
 function deleteProject(){
@@ -6,6 +7,7 @@ localStorage.removeItem(key)
 
  //refresh projects
 showProjectsInSidebar()
+displayAllActivities()
 }
 
 export {deleteProject}

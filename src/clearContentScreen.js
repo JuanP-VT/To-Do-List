@@ -3,7 +3,11 @@ function clearContentScreen(){
     //Change Titlte
     const title = document.querySelector('#projectName')
     title.textContent = 'All Activities'
-    
+        //Remove deleteIcon
+        const delDiv = document.querySelector('#delProject')
+        if(delDiv.firstChild){
+            delDiv.removeChild(delDiv.firstChild)
+        }
         //Remove all activities
     const toDo = document.querySelector('#toDo')
     while (toDo.firstChild){
