@@ -1,244 +1,238 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Patrick Hand SC', cursive;
-    font-size: 28px;
+* {
+  box-sizing: border-box;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 28px;
 }
-#main{
-border: 1px black solid;
-
+body {
+  margin: 0;
+  padding: 0;
 }
-#summaryDiv{
-    display: flex;
-    flex-direction: column;
-    height: 40%;
-    border-bottom: 1px black solid;
+#main {
+  border: 1px black solid;
 }
-#summaryHeader{
-    text-align: center;
-    font-size: 1.3rem;
+#summaryDiv {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  border-bottom: 1px black solid;
 }
-#summaryContent{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+#summaryHeader {
+  text-align: center;
+  font-size: 1.3rem;
 }
-.options{
-    display: flex;
-    font-size: 1.2rem;
-    padding: 5px;
-    gap: 2px;
+#summaryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.textSide:hover{
-    border-bottom: 1px black solid;
+.options {
+  display: flex;
+  font-size: 1.2rem;
+  padding: 5px;
+  gap: 2px;
 }
-.textSide{
-    margin-left: 10px;
+.textSide:hover {
+  border-bottom: 1px black solid;
 }
-#header{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    font-size: 80px;
-    align-items: center;
-    justify-content: center;
-    border: 1px black solid;
-    background: rgb(48,94,96);
-background: linear-gradient(90deg, rgba(48,94,96,1) 12%, rgba(78,160,180,1) 75%);
+.textSide {
+  margin-left: 10px;
 }
-#content{
-    display: flex;
-    height: 90%;
-    width: 100%;
-    background-color: rgb(146, 167, 167);
-
-
+#header {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+  background: rgb(48, 94, 96);
+  background: linear-gradient(
+    90deg,
+    rgba(48, 94, 96, 1) 12%,
+    rgba(78, 160, 180, 1) 75%
+  );
 }
-#sidebar{
-    display: flex;
-    width: 20%;
-    height: 1500px;
-    flex-direction: column;
-    border: 1px black solid;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background-color: rgb(105, 129, 129);
-
+#content {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  background-color: rgb(146, 167, 167);
 }
-#sidebarHeader{
-    height: 10%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    border-bottom: black solid 1px;
+#sidebar {
+  display: flex;
+  width: 20%;
+  height: 1500px;
+  flex-direction: column;
+  border: 1px black solid;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(105, 129, 129);
 }
-#newProject{
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    color: rgb(27, 31, 27);
-    font-weight: 900;
-    margin-bottom: 20px;
-
+#sidebarHeader {
+  height: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  border-bottom: black solid 1px;
 }
-#newProjectTitle{
-    font-size: 1.2em;
-    background-color: rgb(14, 53, 78);
-    justify-self: center;
-    color: white;
-
+#newProject {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(27, 31, 27);
+  font-weight: 900;
+  margin-bottom: 20px;
 }
-#newProjectTitle:hover{
-    transform: scale(1.1);
+#newProjectTitle {
+  font-size: 1.2em;
+  background-color: rgb(14, 53, 78);
+  justify-self: center;
+  color: white;
 }
-#newProjectFormDiv{
-    border: 1px solid black;
-    padding: 10px;
+#newProjectTitle:hover {
+  transform: scale(1.1);
 }
-label{
-    display: block;
+#newProjectFormDiv {
+  border: 1px solid black;
+  padding: 10px;
 }
-input{
-    width: 90%;
-    padding: 5px;
-    border-radius: 5px;
-    outline: none;
-    border-radius: 10px;
-    
+label {
+  display: block;
 }
-select{
-    border-radius: 10px;
+input {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border-radius: 10px;
 }
-button{
-    border-radius: 10px;
+select {
+  border-radius: 10px;
 }
-#closeNewProjectForm{
-    transform: scale(0.8);
+button {
+  border-radius: 10px;
 }
-#closeNewProjectForm:hover{
-    transform: scale(0.9);
+#closeNewProjectForm {
+  transform: scale(0.8);
 }
-#formFooter{
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
+#closeNewProjectForm:hover {
+  transform: scale(0.9);
 }
-
-#projects{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
+#formFooter {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.sidebarProject{
-    text-align: center;
-    font-weight: 900;
-
-}
-.sidebarProject:hover{
-    transform: scale(1.5);
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
 }
 
-
-#viewProject{
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    padding: 5px;
+.sidebarProject {
+  text-align: center;
+  font-weight: 900;
+}
+.sidebarProject:hover {
+  transform: scale(1.5);
 }
 
-#projectHeader{
-    display: flex;
-    height: 10%;
-    width: 100%;
-
+#viewProject {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  padding: 5px;
 }
 
-#projectName{
-    color: rgb(16, 16, 109);
-    display: flex;
-    align-items: center;
-    width: 90%;
-    justify-content: center;
-    font-size: 2rem;
-
-}
-#deleteProject{
-    transform: scale(0.5);
-    margin-top: 10px;
-    margin-right: 500px;
-}
-#toDo{
-    padding: 50px;
-    border-radius: 20px;
-    border: 1px solid black;
-}
-.actCard{
-    display: flex ;
-    width: 100%;
-    height: 100px;
-    border: solid black 1px;
-    border-radius: 20px;
-
-}
-.checkbox{
-    width: 5%;
-    display: flex;
-    align-content: center;
-
-}
-    
-.chkbtn{
-    font-size: 0.5rem;
-    height: 40%;
-    align-self: center;
-    margin-left: 20px;
-    border-radius: 20px;
-    background-color: rgb(78, 78, 78);
-    color: white;
-}
-.rightside{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.upDiv{
-display: flex;
-justify-content: space-around;
-width: 100%;
+#projectHeader {
+  display: flex;
+  height: 10%;
+  width: 100%;
 }
 
-.downDiv{
-display: flex;
-width: 100%;
+#projectName {
+  color: rgb(16, 16, 109);
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  font-size: 2rem;
 }
-.cardDeleteIcon{
-    transform: scale(0.6);
+#deleteProject {
+  transform: scale(0.5);
+  margin-top: 10px;
+  margin-right: 500px;
 }
-.cardDetails{
-    width: 80%;
-    padding-left: 30px;
+#toDo {
+  padding: 50px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
-.cardDelete{
-    width: 30%;
+.actCard {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border: solid black 1px;
+  border-radius: 20px;
 }
-.Low{
-    background-color: rgb(101, 148, 101);
-}
-.Mid{
-    background-color: rgb(236, 236, 104);
-}
-.High{
-    background-color: rgb(245, 86, 86);
+.checkbox {
+  width: 5%;
+  display: flex;
+  align-content: center;
 }
 
-.complete{
-    background-color: grey !important;
-    opacity: 0.6;
+.chkbtn {
+  font-size: 0.5rem;
+  height: 40%;
+  align-self: center;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+.rightside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.upDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-#newCloseIcon{
-    transform: scale(0.8);
+.downDiv {
+  display: flex;
+  width: 100%;
+}
+.cardDeleteIcon {
+  transform: scale(0.6);
+}
+.cardDetails {
+  width: 80%;
+  padding-left: 30px;
+}
+.cardDelete {
+  width: 30%;
+}
+.Low {
+  background-color: rgb(101, 148, 101);
+}
+.Mid {
+  background-color: rgb(236, 236, 104);
+}
+.High {
+  background-color: rgb(245, 86, 86);
+}
+
+.complete {
+  background-color: grey !important;
+  opacity: 0.6;
+}
+
+#newCloseIcon {
+  transform: scale(0.8);
 }
