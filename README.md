@@ -8,8 +8,8 @@ As i keep getting deeper with javascript now I face the challenge to create clea
 
 To help me create a bundle from my modules I started to utilize WebPack.
 
+This app is a To Do List, basically you create projects to keep track of your activities, each activity can have details, importance, due date.
 ## Features:
-
 - Create & delete projects that store tasks
 - Create & delete task from projects
 - Cards display the importance of the task
